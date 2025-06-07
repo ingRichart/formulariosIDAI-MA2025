@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Posicionamiento CSS</title>
+
+     <style>
+          *{
+			font-family: arial;
+		}
+
+		article{
+			border: 1px solid red;
+			margin-bottom: 100px;
+		}
+
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			border: 1px solid blue;
+			line-height: 200px;
+			text-align: center;
+          }
+          
+
+          /*DESPLIEGUE EN BLOQUE*/
+          .bloque div{						
+
+          }
+
+
+          /*DESPLIEGUE EN LINEA*/
+          .enlinea div{
+
+          }
+
+
+          /*DESPLIEGUE EN TABLA*/
+		.entable div{
+
+          }
+
+		
+		/*POSICIONAMIENTO RELATIVO*/
+		#relativo{
+
+          }
+
+
+		/*POSICIONAMIENTO ABSOLUTO*/
+		#absoluto{
+
+          }
+
+
+		/*POSICIONAMIENTO FIJO*/
+		#fijo{
+
+          }
+
+
+		/*POSICIONAMIENTO FLOTANTE*/
+          .flotante{
+
+          }
+          
+          .flotante div{
+
+          }
+
+          .flotante div:nth-child(2){
+
+          }
+
+
+
+     </style>
+</head>
+<body>
+     <h1>ELEMENTOS EN BLOQUE</h1>
+     <article class="bloque">
+          <div>UNO</div>
+          <div>DOS</div>
+          <div>TRES</div>
+          <div>CUATRO</div>
+     </article>
+
+     <h1>ELEMENTOS EN LINEA</h1>
+     <article class="enlinea">
+          <div>UNO</div>
+          <div>DOS</div>
+          <div>TRES</div>
+          <div>CUATRO</div>	
+     </article>
+
+     <h1>ELEMENTOS EN TABLA</h1>
+     <article class="entable">
+          <div>UNO</div>
+          <div>DOS</div>
+          <div>TRES</div>
+          <div>CUATRO</div>	
+     </article>
+
+     <h1>POSICIONAMIENTO</h1>
+     <article class="posicionamiento">
+          <div id="relativo">RELATIVO</div>
+          <div id="absoluto">ABSOLUTO</div>
+          <div id="fijo">FIJO</div>	
+     </article>
+
+     <h1>POSICIONAMIENTO FLOTANTE</h1>
+     <article class="flotante">
+          <div>PRIMER</div>
+          <div>SEGUNDO</div>
+          <div>TERCERO</div>	
+     </article>
+
+</body>
+
+</html>
