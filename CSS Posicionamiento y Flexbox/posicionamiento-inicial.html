@@ -26,52 +26,65 @@
           
 
           /*DESPLIEGUE EN BLOQUE*/
-          .bloque div{						
-
+          .bloque div{	
+               display: block;					
           }
 
 
           /*DESPLIEGUE EN LINEA*/
           .enlinea div{
-
+               display: inline;
+               display: inline-block;
           }
 
 
           /*DESPLIEGUE EN TABLA*/
 		.entable div{
-
+               display: table-cell;
           }
 
 		
 		/*POSICIONAMIENTO RELATIVO*/
 		#relativo{
+               position: relative;
+               left: 300px;
 
           }
 
 
 		/*POSICIONAMIENTO ABSOLUTO*/
 		#absoluto{
+               position: absolute;
+               right: 50px;
+
 
           }
 
 
 		/*POSICIONAMIENTO FIJO*/
 		#fijo{
+               /* position: fixed; */
+               background: blue;
+               color: white;
+               right: 100px;
+               top: 200px;
 
           }
 
 
 		/*POSICIONAMIENTO FLOTANTE*/
           .flotante{
+               height: 400px;
+               width: 100%; 
 
           }
           
           .flotante div{
-
+               float: left;
           }
 
           .flotante div:nth-child(2){
-
+               float: right;
           }
 
 
@@ -115,6 +128,9 @@
           <div>PRIMER</div>
           <div>SEGUNDO</div>
           <div>TERCERO</div>	
+          <div>CUARTO</div>	
+          <div>QUINTO</div>	
+          <div>SEXTO</div>	
      </article>
 
 </body>

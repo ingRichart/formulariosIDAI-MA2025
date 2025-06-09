@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+
+    <style>
+
+        article{
+			border: 1px solid red;
+			margin-bottom: 100px;
+		}
+
+        .claveColor{
+            width: 200px;
+            height: 200px;
+
+            background-color: red;
+        }
+
+        .hexadecimalColor{
+            width: 200px;
+            height: 200px;
+
+            background-color: #21c19d;  
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+
+            background-color: rgb(190, 179, 18);     
+
+            width: 200px;
+			height: 200px;
+			margin: 10px;
+			border: 1px solid blue;
+			line-height: 200px;
+			text-align: center;
+        }
+
+        .claseHSL{
+            width: 200px;
+            height: 200px;
+
+            background-color: hsl(276, 74%, 23%);
+        }
+
+        .claseTransparencia{
+            width: 250px;
+            height: 250px;
+
+            background-color: transparent;
+            background-color: #9b7b1291;
+            background-color: rgb(230, 22, 22);  
+            /* background-color: hsl(214, 87%, 42%);   */
+
+        }
+
+
+        .claseDegradadov1{
+            width: 300px;
+            height: 300px;
+
+            background: linear-gradient(90deg, blue, red);
+        }
+
+        .claseDegradadov2{
+            width: 300px;
+            height: 300px;
+
+            background: radial-gradient(blue, green
+                , red, orange);
+        }
+
+          /*DESPLIEGUE EN BLOQUE*/
+          .bloque div{	
+               display: block;					
+          }
+
+
+          /*DESPLIEGUE EN LINEA*/
+          .enlinea div{
+               display: inline;
+               display: inline-block;
+          }
+
+
+          /*DESPLIEGUE EN TABLA*/
+		.entable div{
+               display: table-cell;
+          }
+
+    </style>
+
+
+</head>
+<body>
+
+     <h1>ELEMENTOS EN BLOQUE</h1>
+     <article class="bloque">
+        <div class="claveColor">UNO</div>
+        <div class="claveColor">DOS</div>
+        <div class="claveColor">TRES</div>
+        <div class="claveColor">CUATRO</div>
+    </article>
+
+
+     <h1>ELEMENTOS EN LINEA</h1>
+     <article class="enlinea">
+        <div class="hexadecimalColor">UNO</div>
+        <div class="hexadecimalColor">DOS</div>
+        <div class="hexadecimalColor">TRES</div>
+        <div class="hexadecimalColor">CUATRO</div>
+     </article>
+
+     <h1>ELEMENTOS EN TABLA</h1>
+     <article class="entable">
+          <div>UNO</div>
+          <div>DOS</div>
+          <div>TRES</div>
+          <div>CUATRO</div>	
+     </article>
+
+
+    <div class="claseHSL">
+
+    </div>
+
+    <div class="claseTransparencia">
+    </div>
+
+
+
+    <div class="claseDegradadov1"></div>
+    <div class="claseDegradadov2"></div>
+
+
+</body>
+</html>
