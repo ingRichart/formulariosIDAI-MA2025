@@ -13,11 +13,12 @@
 			float: left;
 			margin: 10px;
 
-			/*Aplicar FLEXBOX*/
+			/*Aplicar FLEXBOX */
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: center;
-			align-items: center;
+			align-items: center; 
+               
 		}
 
 		.items{
@@ -29,6 +30,21 @@
 			font-size: 22px;
 		}
 
+          .c1 .item4{
+               align-self: flex-start;
+          }
+
+          .c2 .item3{
+               align-self: flex-end;
+          }
+
+          .c3 .item2 {
+               align-self: center;
+          }
+
+          .c4 .item1{
+               align-self: stretch;
+          }
 
      </style>
 </head>
